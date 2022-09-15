@@ -32,6 +32,7 @@ class _HomeState extends State<Home> {
         buttonBackgroundColor: Theme.of(context).primaryColorLight,
         color: Theme.of(context).primaryColor,
         animationDuration: Duration(milliseconds: 200),
+        height: 55,
       ),
     );
   }
