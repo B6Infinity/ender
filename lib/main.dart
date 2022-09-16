@@ -1,4 +1,4 @@
-import 'package:ender/pages/home.dart';
+import 'package:ender/home.dart';
 import 'package:ender/theme/theme_constants.dart';
 import 'package:flutter/material.dart';
 
