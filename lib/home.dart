@@ -6,8 +6,11 @@ import 'package:ender/pages/messages.dart';
 import 'package:ender/pages/profile.dart';
 import 'package:ender/pages/search.dart';
 import 'package:ender/pages/settings.dart';
+import 'package:ender/theme/theme_constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 final pages = [
   Profile(),
@@ -37,16 +40,28 @@ class _HomeState extends State<Home> {
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         // ignore: prefer_const_literals_to_create_immutables
         items: <Widget>[
-          Icon(Icons.person),
-          Icon(Icons.search),
-          Icon(Icons.lightbulb),
-          Icon(Icons.message),
-          Icon(Icons.settings),
+          Icon(
+            Icons.person,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.search,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.lightbulb,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.message,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.settings,
+            color: Colors.white,
+          ),
         ],
         onTap: (index) {
-          //Handle button tap
-          //
-          // print(index);
           setState(() {
             activepage = index;
           });
@@ -60,4 +75,33 @@ class _HomeState extends State<Home> {
       ),
     );
   }
+}
+
+// ListTile Se
+Padding heading1(String text) {
+  return Padding(
+    padding: const EdgeInsets.only(top: 24.0, bottom: 24, left: 10),
+    child: Text(
+      text,
+      style: GoogleFonts.firaSans(
+        color: primaryColor,
+        fontSize: 25,
+        fontWeight: FontWeight.w600,
+      ),
+    ),
+  );
+}
+
+Padding heading2(String text) {
+  return Padding(
+    padding: const EdgeInsets.only(top: 24.0, bottom: 24, left: 10),
+    child: Text(
+      text,
+      style: GoogleFonts.firaSans(
+        color: primaryColor,
+        fontSize: 20,
+        fontWeight: FontWeight.w600,
+      ),
+    ),
+  );
 }

@@ -13,7 +13,8 @@ class _IdeasState extends State<Ideas> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: const Text("IDEAS LOL"),
+      child: ListView(children: [Text("IDEAS LOL Abg Ff")]),
+      // https://youtu.be/uHiTO1dfjUI?t=837
     );
   }
 }
