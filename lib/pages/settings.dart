@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
+import '../widgets/themeswitch.dart';
+
 class Settings extends StatefulWidget {
   const Settings({super.key});
 
@@ -22,10 +24,7 @@ class _SettingsState extends State<Settings> {
             Row(
               children: [
                 Expanded(child: heading1('Settings')),
-                Switch(
-                  value: true,
-                  onChanged: (value) {},
-                ),
+                ThemeSwitch(),
               ],
             ),
             // heading1('Settings'),

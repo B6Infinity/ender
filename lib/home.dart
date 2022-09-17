@@ -78,7 +78,7 @@ class _HomeState extends State<Home> {
 }
 
 // ListTile Se
-Padding heading1(String text) {
+Widget heading1(String text) {
   return Padding(
     padding: const EdgeInsets.only(top: 24.0, bottom: 24, left: 10),
     child: Text(
@@ -92,7 +92,7 @@ Padding heading1(String text) {
   );
 }
 
-Padding heading2(String text) {
+Widget heading2(String text) {
   return Padding(
     padding: const EdgeInsets.only(top: 24.0, bottom: 24, left: 10),
     child: Text(
