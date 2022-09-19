@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "286850599809",
+    "project_id": "ender-2022",
+    "storage_bucket": "ender-2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286850599809:android:9df9a45faa8a65e735f680",
+        "android_client_info": {
+          "package_name": "com.example.ender"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286850599809-hb8oipds2ecjp7ib6mveei8vcouagt92.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvVikyTxvJzPr6zvc5C-iydymPU1CnHtU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286850599809-hb8oipds2ecjp7ib6mveei8vcouagt92.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -11,6 +11,11 @@ ThemeData lightTheme = ThemeData(
     bodyText2: GoogleFonts.firaSans(),
     bodyText1: GoogleFonts.firaSans(),
   ),
+  elevatedButtonTheme: ElevatedButtonThemeData(
+    style: ElevatedButton.styleFrom(
+      backgroundColor: primaryColor,
+    ),
+  ),
 );
 
 ThemeData darkTheme = ThemeData(
@@ -24,6 +29,11 @@ ThemeData darkTheme = ThemeData(
     bodyText2: GoogleFonts.firaSans(),
     bodyText1: GoogleFonts.firaSans(),
   ),
+  elevatedButtonTheme: ElevatedButtonThemeData(
+    style: ElevatedButton.styleFrom(
+      backgroundColor: primaryColor,
+    ),
+  ),
 );
 
 const lightestColor = Color(0xff03fc8c);
@@ -31,3 +41,17 @@ const primaryColorLight = Color(0xff06bf6c);
 const primaryColor = Color(0xff048a4e);
 const primaryColorDark = Color(0xff048a4e);
 const darkestColor = Color(0xff06120c);
+
+InputDecoration generateInputDecoration(String label) {
+  return InputDecoration(
+    labelText: label,
+    focusColor: primaryColor,
+    focusedBorder: const OutlineInputBorder(
+      borderSide: BorderSide(
+        width: 2,
+        color: primaryColor,
+      ),
+    ),
+    labelStyle: const TextStyle(color: primaryColor),
+  );
+}

@@ -32,13 +32,18 @@ dependencies:
   flutter:
     sdk: flutter
 
+  
   provider: ^6.0.3
+
+  firebase_auth: ^3.9.0
+  cloud_firestore: ^3.4.8
 
   cupertino_icons: ^1.0.2
   font_awesome_flutter: ^10.2.1
   google_fonts: ^3.0.1
   
   curved_navigation_bar: ^1.0.3
+
 
 dev_dependencies:
   flutter_test:

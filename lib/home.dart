@@ -7,6 +7,7 @@ import 'package:ender/pages/profile.dart';
 import 'package:ender/pages/search.dart';
 import 'package:ender/pages/settings.dart';
 import 'package:ender/theme/theme_constants.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -20,6 +21,8 @@ final pages = [
   Settings(),
 ];
 int activepage = 2;
+
+final user = FirebaseAuth.instance.currentUser!;
 
 class Home extends StatefulWidget {
   const Home({super.key});
