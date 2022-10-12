@@ -58,7 +58,7 @@ class _SignInState extends State<SignIn> {
         password: passwordController.text.trim(),
       );
     } on FirebaseAuthException catch (e) {
-      print(e);
+      print(e); //https://youtu.be/4vKiJZNPhss?t=380
     }
   }
 }
